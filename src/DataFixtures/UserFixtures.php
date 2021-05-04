@@ -15,16 +15,12 @@ class UserFixtures extends Fixture
      */
     private $encoder;
 
-    /**
-     * @codeCoverageIgnore
-     */
     public function __construct(UserPasswordEncoderInterface $encoder)
     {
         $this->encoder = $encoder;
     }
 
     /**
-     * @codeCoverageIgnore
      * @SuppressWarnings(PHPMD.StaticAccess)
      */
     public function load(ObjectManager $manager)
