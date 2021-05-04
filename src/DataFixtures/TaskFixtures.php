@@ -13,7 +13,6 @@ class TaskFixtures extends Fixture implements DependentFixtureInterface
 {
     /**
      * @SuppressWarnings(PHPMD.StaticAccess)
-     * @codeCoverageIgnore
      */
     public function load(ObjectManager $manager)
     {
@@ -34,9 +33,6 @@ class TaskFixtures extends Fixture implements DependentFixtureInterface
         $manager->flush();
     }
 
-    /**
-     * @codeCoverageIgnore
-     */
     public function getDependencies()
     {
         return [
