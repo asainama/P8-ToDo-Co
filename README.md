@@ -1,5 +1,7 @@
 # ToDoList
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/621b106de4544a5fa21c0b8aa5795c4b)](https://www.codacy.com/gh/asainama/P8-ToDo-Co/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=asainama/P8-ToDo-Co&amp;utm_campaign=Badge_Grade)
+
 Base du projet #8 : Améliorez un projet existant
 
 https://openclassrooms.com/projects/ameliorer-un-projet-existant-1
