@@ -1,0 +1,7 @@
+{
+  "project": {
+    "name": "TODO@CO",
+    "description": "A changelog generator for gitmoji 😜",
+    "version": "1.0.0"
+  }
+}
