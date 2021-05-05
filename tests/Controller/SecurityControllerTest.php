@@ -29,13 +29,6 @@ class SecurityControllerTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_FOUND);
     }
 
-    // public function testLoginCheck()
-    // {
-    //     $client = $this->createAuthorizedClient();
-    //     $client->request('GET', '/login_check');
-    //     $this->assertResponseStatusCodeSame(Response::HTTP_OK);
-    // }
-
     public function testLoginWithBadCredentials()
     {
         $client = static::createClient();
@@ -59,7 +52,7 @@ class SecurityControllerTest extends WebTestCase
         $client = static::createClient();
         // $csrfToken = $client->getContainer()->get('security.csrf.token_manager')->getToken('authenticate');
         $client->request('POST', '/login_check', [
-            '_username' => 'admin@admin.fr',
+            '_username' => 'admin',
             '_password' => 'admin',
             // '_csrf_token' => $csrfToken
         ]);

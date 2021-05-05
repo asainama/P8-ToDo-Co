@@ -45,14 +45,14 @@ class UserControllerTest extends WebTestCase
         $this->assertEquals(1, $crawler->filter('input[name="user[password][first]"]')->count());
         $this->assertEquals(1, $crawler->filter('input[name="user[password][second]"]')->count());
         $this->assertEquals(1, $crawler->filter('input[name="user[email]"]')->count());
-        $this->assertEquals(2, $crawler->filter('input[name="user[roles][]"]')->count());
+        $this->assertEquals(2, $crawler->filter('input[name="user[roles]"]')->count());
 
         $form['user[username]'] = 'user' .random_int(10, 999);
         $form['user[password][first]'] = 'password';
         $form['user[password][second]'] = 'password';
         $form['user[email]'] = 'user' .random_int(10, 999) . '@gmail.fr';
         $form['user[_token]'] = $csrfToken;
-        $form['user[roles][0]']->tick();
+        $form['user[roles]'] = 'ROLE_USER';
         $client->submit($form);
         $this->assertResponseRedirects();
         $client->followRedirect();
@@ -81,10 +81,11 @@ class UserControllerTest extends WebTestCase
         $this->assertEquals(1, $crawler->filter('input[name="user[password][first]"]')->count());
         $this->assertEquals(1, $crawler->filter('input[name="user[password][second]"]')->count());
         $this->assertEquals(1, $crawler->filter('input[name="user[email]"]')->count());
-        $this->assertEquals(2, $crawler->filter('input[name="user[roles][]"]')->count());
-
+        $this->assertEquals(2, $crawler->filter('input[name="user[roles]"]')->count());
+        $value = ($form['user[roles]']->getValue() === 'ROLE_ADMIN') ? 'ROLE_USER' : 'ROLE_ADMIN';
         $form['user[password][first]'] = 'admin';
         $form['user[password][second]'] = 'admin';
+        $form['user[roles]'] = $value;
         // $form['user[_token]'] = $csrfToken;
 
         $client->submit($form);
