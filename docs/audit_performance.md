@@ -9,6 +9,7 @@ Il est possible d'optimiser le code:
 - Optimiseur de composer
 - Extension C pour Twig
 - Dump-autoload
+- Lighthouse
 
 Ici **sont** les différents liens pour les audits de performance:
 
