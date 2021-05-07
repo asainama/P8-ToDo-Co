@@ -42,31 +42,18 @@ From the project root, run the following commands:
     php bin/console doctrine:schema:create
 ```
 
-# Merge requests
+## How to Contribute
 
-Please, use a clear and explicit title for your merge request. Same for the MR description.
+1. Create a issue with a description. Ensuring you answer the questions: Why? What? How?
+2. Check if the problem already exists.
+3. Make sure the project compile.
+4. Create test both the code (unit/functional tests), UI tests and document your code.
+5. Make sur tests coverage superior 80%
+6. Test the quality of the code with Codacy and obtain a minimum grade of B.
+7. Open a merge request
+8. Participate in the code review: Once you submit the merge branch your code will be analyzed. Be sure to respond to comments.
 
-To the development appears on the changelog, use gitmoji-changelog
-
-See the changelog config for more.
-
-NB: For commit's name, use a clear and sample name or squash it.
-
-1. Create new branch
-
-```shell
-    git checkout -b nouvelle-branch
-```
-
-2. Push new branch sur votre fork
-
-```shell
-    git push origin nouvelle-branch
-```
-
-3. Open a new pull request
-
-# Checks
+## Checks
 
 For all your MR, run this from the root project:
 Before commit please launches some tools to checks code like phpcs, phpstan, and more.

@@ -1,7 +1,7 @@
 # Changelog
 
-<a name="1.0.0"></a>
-## 1.0.0 (2021-05-05)
+<a name="1.0.1"></a>
+## 1.0.1 (2021-05-05)
 
 ### Added
 
@@ -21,6 +21,7 @@
 
 ### Miscellaneous
 
+- 📝 Update Changelog [[f5cfb6a](https://github.com/asainama/P8-ToDo-Co/commit/f5cfb6a0f7e7e30081e3daf4d5550c3d9c07723b)]
 - 📝 Add badge to readme [[6fc189f](https://github.com/asainama/P8-ToDo-Co/commit/6fc189f341fdda79e4b7befdcaa942e5f4365fc4)]
 -  Merge branch &#x27;dev&#x27; of https://github.com/asainama/P8-ToDo-Co into dev [[31ba890](https://github.com/asainama/P8-ToDo-Co/commit/31ba890b816f7be420b9e57e27c6ceab66db1376)]
 -  Merge pull request [#7](https://github.com/asainama/P8-ToDo-Co/issues/7) from asainama/feature/docs [[aec3436](https://github.com/asainama/P8-ToDo-Co/commit/aec3436c068c95e528cf59d48c0c528726f9006e)]
